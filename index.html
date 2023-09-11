@@ -37,7 +37,7 @@
            
     axios.get('https://raw.githubusercontent.com/pradt2/always-online-stun/master/valid_hosts.txt')
         .then(function (response) {
-            const servers = response.data.split("\n").splice(0,5);
+            const servers = response.data.split("\n").splice(0,20);
             
             let iceServers = [
             // Test some STUN server
